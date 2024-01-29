@@ -25,9 +25,9 @@ a:hover{
 /* Header */
 header{
     position: relative;
-    background-image: url(images/bacgroundnav.jpg);
+    background-image: url(images/1J7A3574.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right 50%, top 10%;
     height: 80vh;
     
 }
@@ -402,6 +402,12 @@ footer .footer_links{
 /* 992PX */
 
 @media(max-width:992px){
+    header{
+        background-position:center;
+    }
+
+
+
 
     /* NAVBAR */
      .navbar .links,

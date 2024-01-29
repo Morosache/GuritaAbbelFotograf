@@ -332,6 +332,11 @@ footer .footer_links{
     #poza{
         width:250px;
         height: 350px;
+        
+    }
+
+    .prezentare_poze{
+        margin:30px;
     }
 
     .instafooter{
