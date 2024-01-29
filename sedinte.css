@@ -1,0 +1,111 @@
+/* Titlu pagina */
+
+.page_title{
+    display: flex;
+    flex-wrap: wrap;
+    margin:100px;
+    font-size: 1.20rem;
+    border-bottom-style:solid;
+    border-width: 2px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* prezentare poze */
+
+.prezentare_poze{
+    margin:75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#poza{
+    width:400px;
+    padding:7px;
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:1204px){
+
+    /* navbar */
+    .navbar .links{
+        gap:3.5rem;
+    }
+
+    .page_title{
+        font-size:1rem;
+        border-width: 1px;
+    }
+
+
+
+
+    #poza{
+        width:350px;
+    }
+        
+}
+
+@media(max-width:992px){
+
+    /* PREZENTARE POZE */
+    #poza{
+        width:325px;
+    }
+
+    .page_title{
+        font-size:0.82rem;
+        margin:75px;
+    }
+
+}
+
+@media(max-width: 830px){
+    #poza{
+        width:350px;
+    }
+
+}
+
+@media(max-width: 600px){
+    #poza{
+        width:300px;
+    }
+
+    .page_title{
+        margin:75px;
+    }
+}
+
+@media(max-width:475px){
+    .page_title{
+        font-size: 0.75rem;
+        margin:30px;
+    }
+
+    #poza{
+        width:250px;
+    }
+
+    .instafooter{
+        font-size:1.5rem;
+    }
+
+     /* Navbar */
+     .dropdown_menu{
+        width:280px;
+        right:10;
+
+    }
+
+
+}

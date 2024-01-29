@@ -1,0 +1,469 @@
+body{
+    margin:0;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(85, 78, 68);
+}
+
+a:hover{
+    color:rgb(221, 184, 131);
+}
+
+/* Header */
+header{
+    position: relative;
+    background-color: #e1caba;
+    background-image: none;
+    
+}
+/* Logo navbar */
+#logo{
+    height: 80px;
+    width:80px;
+    margin-left:80px;
+}
+
+
+/* navbar itself */
+.navbar{
+    margin-top: 0px;
+    width:100%;
+    height:120px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #e6e2e0;
+}
+
+.navbar .links{
+    display:flex;
+    gap:6rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+
+.navbar .toggle_btn{
+    color:azure;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display:none;
+
+}
+
+.action_btn{
+    background-color: rgb(90, 85, 75) ;
+    color:aliceblue;
+    padding:0.75rem 1.25rem;
+    border:none;
+    outline:none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:50px;
+
+}
+
+.action_btn:hover {
+    color: rgb(221, 184, 131);
+    scale:1.20;
+}
+
+.action_btn:active{
+    scale:0.95;
+ }
+
+/* dropdown menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right:1.5rem;
+    top:60px;
+    width:330px;
+    height: 0;
+    background: rgba(123, 122, 121, 1);
+    backdrop-filter: blur(30px);
+    border-radius:10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.dropdown_menu.open{
+    height: 270px;
+}
+
+.dropdown_menu li{
+    padding:0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.dropdown_menu .action_btn{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+
+
+
+/* descriere despre mine */
+
+.despremineAbbel{
+    margin: 125px;
+   
+
+}
+
+.despreAbbel{
+    display:flex;
+    justify-content: center;
+    align-items: space-evenly;
+   
+}
+
+.imgAbbel{
+    width: 375px;
+    border-radius: 2%;
+
+}
+
+
+.titlu_despreMine{
+    font-size: 1.20rem;
+    border-bottom-style:solid;
+    border-width: 1px;
+}
+
+.prg_abbel{
+    margin: 50px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+
+.border_bewteen{
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+/* DESCRIERE DESPRE FAMILIA MEA */
+.myFamily{
+    margin:125px;
+    font-weight: 300;
+}
+
+.poze{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgFam{
+    width:375px;
+    border-radius: 2%;
+    
+}
+
+.imgMiriam{
+    width:375px;
+    border-radius: 2%;
+
+}
+
+.prg_Fam{
+    margin:50px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titlu_Fam{
+    font-size: 1.20rem;
+    border-bottom-style:solid;
+    border-width: 1px;
+}
+
+/* footer */
+footer{
+    font-family: 'Lato', sans-serif;
+    margin-top:150px;
+}
+
+
+
+footer a{
+    color:black;
+   font-size:1.2rem;
+}
+
+
+footer ul{
+    padding:0;
+}
+
+
+footer li{
+   margin-top:30px;
+}
+
+
+footer .footer_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seemore{
+    font-size:1.5rem;
+    border-bottom-style: solid;
+    border-width:1px;
+    margin-bottom:50px;
+}
+
+#footerlink2{
+    margin-left:22px;
+}
+
+
+.instafooter{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.75rem;
+}
+
+.instalogo{
+    background-color: white;;
+    margin-top:100px;
+   margin-left:150px;
+}
+
+.instalink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.madeBy{
+    font-size:0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width:1204px){
+
+    /* navbar */
+    .navbar .links{
+        gap:3.5rem;
+    }
+
+    /* DEPRE MINE */
+
+    .imgAbbel{
+        width:325px;
+    }
+
+    .prg_abbel{
+        font-size: 1rem;
+    }
+
+    .titlu_despreMine{
+        font-size: 1rem;
+    }
+
+
+    /* FAMILIA MEA */
+
+    .myFamily{
+        margin:100px;
+    }
+
+    .prg_Fam{
+        font-size: 1rem;
+        margin:0px;
+    }
+    .titlu_Fam{
+        font-size:1rem;
+    }
+
+    .imgFam{
+        width: 325px;
+
+    }
+
+    .imgMiriam{
+        width:325px;
+    }
+
+}
+
+@media(max-width:992px){
+
+   
+
+  
+    /* NAVBAR */
+
+    .navbar{
+        height:100px;
+    }
+    .navbar .links,
+    .navbar .action_btn{
+        display:none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+        margin-right: 60px;
+    }
+
+    .fa-solid_fa-bars{
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .dropdown_menu{
+        display:block;
+        top:84px;
+        margin-right:0;
+        border-radius: 10;
+    }
+
+    #logo{
+        margin-left:50px;
+    }
+    
+
+    /* DESPRE MINE */
+
+    .despremineAbbel{
+        margin:50px;
+    }
+    .despreAbbel{
+        flex-wrap: wrap;
+        margin-top:20px;
+    }
+
+    /* FAMILIA MEA */
+
+     
+    .myFamily{
+        margin:100px;
+    }
+
+    .imgFam{
+        margin-top:25px;
+    }
+
+    .imgMiriam{
+        margin-top:25px;
+    }
+
+    .poze{
+        flex-wrap: wrap;
+    }
+    
+
+  
+
+
+}
+   
+@media(max-width: 600px){
+    .despremineAbbel{
+        margin:20px;
+    }
+
+
+    .imgAbbel{
+        width:250px;
+    }
+
+    .titlu_despreMine{
+        font-size:0.7rem
+    }
+
+    
+    /* Familia MEa */
+    .myFamily{
+        margin:70px;
+    }
+
+    #pozaFam{
+        width:250px
+    }
+
+    .titlu_Fam{
+        font-size:0.7rem
+    }
+
+   
+
+
+
+}
+
+@media(max-width:425px){
+
+    .despremineAbbel{
+        margin:0;
+    }
+   
+
+   
+
+    .titlu_despreMine{
+        font-size:0.65rem
+    }
+
+    /* FAMILIA MEA */
+
+    .myFamily{
+        margin:100px  50px 50px 50px;
+    }
+
+    .titlu_Fam{
+        font-size:0.65rem
+    }
+
+    /* footer */
+
+    .instafooter{
+        font-size:1.5rem;
+    }
+
+     /* Navbar */
+     .dropdown_menu{
+        width:280px;
+        right:10;
+
+    }
+
+}
+    

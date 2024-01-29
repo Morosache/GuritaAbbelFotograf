@@ -1,0 +1,349 @@
+body{
+    margin:0;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(85, 78, 68);
+}
+
+a:hover{
+    color:rgb(221, 184, 131);
+}
+
+/* Header */
+header{
+    position: relative;
+    background-color: #e1caba;
+    background-image: none;
+    
+}
+/* Logo navbar */
+#logo{
+    height: 80px;
+    width:80px;
+    margin-left:80px;
+}
+
+
+/* navbar itself */
+.navbar{
+    width:100%;
+    height:120px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #e6e2e0;
+}
+
+.navbar .links{
+    display:flex;
+    gap:6rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+
+.navbar .toggle_btn{
+    color:azure;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display:none;
+
+}
+
+.action_btn{
+    background-color: rgb(90, 85, 75) ;
+    color:aliceblue;
+    padding:0.75rem 1.25rem;
+    border:none;
+    outline:none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:50px;
+
+}
+
+.action_btn:hover {
+    color: rgb(221, 184, 131);
+    scale:1.20;
+}
+
+.action_btn:active{
+    scale:0.95;
+ }
+
+/* dropdown menu */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right:1.5rem;
+    top:60px;
+    width:330px;
+    height: 0;
+    background: rgba(123, 122, 121, 1);
+    backdrop-filter: blur(30px);
+    border-radius:10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.dropdown_menu.open{
+    height: 270px;
+}
+
+.dropdown_menu li{
+    padding:0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.dropdown_menu .action_btn{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+
+
+/* Titlu pagina */
+
+.page_title{
+    display: flex;
+    flex-wrap: wrap;
+    margin:100px;
+    font-size: 1.20rem;
+    border-bottom-style:solid;
+    border-width: 2px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* prezentare poze */
+
+.prezentare_poze{
+    margin:75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#poza{
+    width:400px;
+    height:550px;
+    padding:7px;
+}
+
+
+/* footer */
+footer{
+    font-family: 'Lato', sans-serif;
+    margin-top:150px;
+}
+
+
+
+footer a{
+    color:black;
+   font-size:1.2rem;
+}
+
+
+footer ul{
+    padding:0;
+}
+
+
+footer li{
+   margin-top:30px;
+}
+
+
+footer .footer_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seemore{
+    font-size:1.5rem;
+    border-bottom-style: solid;
+    border-width:1px;
+    margin-bottom:50px;
+}
+
+#footerlink2{
+    margin-left:22px;
+}
+
+
+.instafooter{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.75rem;
+}
+
+.instalogo{
+    background-color: white;;
+    margin-top:100px;
+   margin-left:150px;
+}
+
+.instalink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.madeBy{
+    font-size:0.5rem;
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:1204px){
+
+    /* navbar */
+    .navbar .links{
+        gap:3.5rem;
+    }
+
+    .page_title{
+        font-size:1rem;
+        border-width: 1px;
+    }
+
+
+
+
+    #poza{
+        width:350px;
+        height:500px;
+    }
+        
+}
+
+
+@media(max-width:992px){
+
+   
+
+  
+    /* NAVBAR */
+
+    .navbar{
+        height:100px;
+    }
+    .navbar .links,
+    .navbar .action_btn{
+        display:none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+        margin-right: 60px;
+    }
+
+    .fa-solid_fa-bars{
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .dropdown_menu{
+        display:block;
+        top:84px;
+        margin-right:0;
+        border-radius: 10;
+    }
+
+    #logo{
+        margin-left:50px;
+    }
+
+    /* PREZENTARE POZE */
+    #poza{
+        width:325px;
+        height: 450px;
+    }
+
+    .page_title{
+        font-size:0.82rem;
+        margin:75px;
+    }
+
+
+
+
+}
+
+
+
+@media(max-width: 830px){
+    #poza{
+        width:350px;
+        height: 500px;
+    }
+
+}
+
+
+@media(max-width: 600px){
+    #poza{
+        width:300px;
+        height: 425px;
+    }
+
+    .page_title{
+        margin:75px;
+    }
+}
+
+@media(max-width:475px){
+    .page_title{
+        font-size: 0.75rem;
+        margin:30px;
+    }
+
+    #poza{
+        width:250px;
+        height: 350px;
+    }
+
+    .instafooter{
+        font-size:1.5rem;
+    }
+
+     /* Navbar */
+     .dropdown_menu{
+        width:280px;
+        right:10;
+
+    }
+
+
+}
