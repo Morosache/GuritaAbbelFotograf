@@ -41,7 +41,9 @@ header{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  #e6e2e0;
+    background-color:  #c2c0c0;
+    position: fixed;
+    top: 0;
 }
 
 .navbar .links{
@@ -331,6 +333,7 @@ footer .footer_links{
 
     .navbar{
         height:100px;
+        position: relative;
     }
     .navbar .links,
     .navbar .action_btn{
