@@ -42,8 +42,6 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color:  #c2c0c0;
-    position: fixed;
-    top: 0;
 }
 
 .navbar .links{
