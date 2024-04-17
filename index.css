@@ -518,6 +518,10 @@ footer .footer_links{
 
     
     /* Navbar */
+
+    .dropdown_menu{
+        width:240px;
+    }
     .dropdown_menu.open{
         width:240px;
         right:10;

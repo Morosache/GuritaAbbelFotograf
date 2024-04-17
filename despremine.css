@@ -474,6 +474,9 @@ footer .footer_links{
         height: 240px;
 
     }
+    .dropdown_menu{
+        width:240px;
+    }
 
 }
     
