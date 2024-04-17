@@ -497,6 +497,12 @@ footer .footer_links{
     .despremine_p{
         margin: 30px;
     }
+
+    .titlu_descriere{
+        font-size:0.70rem;
+
+    }
+
     .poza_Eu{
         width:300px;
         height:400px;
