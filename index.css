@@ -6,6 +6,9 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 li{
     list-style: none;
 }
@@ -17,7 +20,6 @@ a{
 a:hover{
     color:rgb(221, 184, 131);
 }
-
 
 
 
@@ -76,6 +78,7 @@ header{
     font-weight: bold;
     cursor: pointer;
     margin-right:50px;
+   
 
 }
 
@@ -87,6 +90,21 @@ header{
 .action_btn:active{
     scale:0.95;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* dropdown menu */
 .dropdown_menu{
@@ -191,16 +209,18 @@ header{
 
 /* PREZENTARE POZE */
 .prezentare_poze{
-    display:flex;
-    justify-content: space-evenly;
-    align-items:center;
-    margin: 250px;
-
+    margin:150px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+
 #poza1{
-    width: 420px;
-    padding:0.5rem;
+    width:370px;
+    padding: 5px;
     border-radius: 2%;
 
 }
@@ -290,61 +310,39 @@ footer .footer_links{
 
 
 
+/* MEDIA RESPONSIVE */
 
-
-
-
-/* RESPONSIVE DESIGN */
-
-
-@media(min-width:1956px){
+@media(min-width:1600px){
     #poza1{
-        width:600px;
+        width:400px;
     }
+
+    .prezentare_poze{
+        margin:200px;
+    }
+
+
 }
+@media(max-width:1450px){
+    .prezentare_poze{
+        margin:100px;
+    }
 
-@media(max-width:1956px){
-
-}
-
-@media(max-width:1810px){
     #poza1{
         width:350px;
     }
 
-
 }
 
-@media(max-width:1660px){
+@media(max-width:1288px){
     #poza1{
-        width: 550px;
+        width:320px;
     }
 }
-
-@media(max-width:1550px){
-    #poza1{
-        width: 450px;
-    }
-}
-
-
-@media(max-width:1395px){
-    #poza1{
-        width:450px
-    }
-}
-
-@media(max-width:1335px){
-    #poza1{
-        width: 350px;
-    }
-}
-
 
 @media(max-width:1204px){
-
-    /* navbar */
-    .navbar .links{
+     /* navbar */
+     .navbar .links{
         gap:3rem;
     }
     
@@ -363,11 +361,11 @@ footer .footer_links{
     }
 
     .descriere_Eu{
-        font-size: 1rem;
+        font-size: 0.90rem;
     }
 
     .titlu_descriere{
-        font-size:1.20rem
+        font-size:1.20rem;
         
     }
 
@@ -375,43 +373,44 @@ footer .footer_links{
         margin-top:5px;
     }
 
-
-    /* PREZENTARE POZE */
-    #poza1{
-        width:400px;
+    .poze_btn{
+        padding:7px 15px 7px 15px;
+        font-size:1.10rem;
     }
+
+
+    /* poze*/
 
     .prezentare_poze{
-        margin:120px;
+        margin:135px;
     }
+
+    #poza1{
+        width:400px;
+        margin:0;
+    }
+    
 }
 
 @media(max-width:1100px){
-    #poza1{
-        width:350px;
-    }
-
     .prezentare_poze{
-        margin:130px;
+        margin:100px;
     }
 
+    #poza1{
+        width:375px;
+    }
 }
 
-
-
-
-/* 992PX */
-
 @media(max-width:992px){
+
     header{
         background-position:center;
     }
 
-
-
-
+    
     /* NAVBAR */
-     .navbar .links,
+    .navbar .links,
     .navbar .action_btn{
         display:none;
     }
@@ -447,111 +446,99 @@ footer .footer_links{
         width:80vw;
         justify-content: center;
         align-items: center;
-        margin:50px;
+        margin:40px;
        
     
     }
 
     .poza_Eu{
-       width:375px;
+       width:350px;
        height:450px;
-       margin:0px;
+       margin:0;
     }
     .titlu_descriere{
         font-size:0.80rem;
+
     }
-
-    /* Prezerntare Poze */
-
-    .prezentare_poze{
-        flex-wrap: wrap;
-        margin:80px;
-    }
-
-    
-    
-}
-
-
-@media(max-width:937px){
-    #poza1{
-        width:500px;
-    }
-
-
-.prezentare_poze{
-    margin:200px;
-}
-}
-
-
-
-@media(max-width:600px){
 
     .despremine_btn{
         font-size: 1rem;
     }
+
+    
+
+
+
+
     .prezentare_poze{
-        margin:200px;
-    }
+        margin:275px;
+        }
 
     #poza1{
-        width:325px;
+        width: 425px;
     }
-
-    .poze_btn{
-        font-size:1rem;
-    }
-}   
-
-
-/* 425PX */
-@media(max-width:475px){
 
     
-
-
-    /* Descriere */
-    .despremine_p{
-        font-size: 0.75rem;
-       margin:50px;
-    }
-
-    .titlu_descriere{
-        font-size:0.70rem;
-
-    }
-
-    .poza_Eu{
-        width:325px;
-    }
-
-
-
-
-    
-    .prezentare_poze{
-        margin:100px;
-    }
-
-  
 }
 
-@media(max-width:425px){
-
-
-    .despremine_p{
-        margin:35px;
+@media(max-width:560px){
+    .prezentare_poze{
+        margin:240px;
     }
 
+    .despremine_btn{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media(max-width:475px){
+
+    .despremine_p{
+        margin: 30px;
+    }
+    .poza_Eu{
+        width:300px;
+        height:400px;
+    }
+
+    .prezentare_poze{
+        margin:150px;
+    }
+
+
+    #poza1{
+        width:300px;
+    }
+
+    
+    /* Navbar */
+    .dropdown_menu.open{
+        width:240px;
+        right:10;
+        height: 240px;
+
+    }
+}
+
+
+@media(max-width:375px){
+
+    .despremine_p{
+        margin: 30px;
+    }
     .poza_Eu{
         width:275px;
         height:375px;
     }
 
     #poza1{
-        width:300px;
+        width:290px;
+        
+    }
 
+    .despremine_btn{
+        font-size: 0.8rem;
     }
 
     .instafooter{
@@ -569,14 +556,9 @@ footer .footer_links{
         
     }
 
-    /* Navbar */
-    .dropdown_menu{
-        width:280px;
-        right:10;
 
-    }
 
-    
+
 }
 
 

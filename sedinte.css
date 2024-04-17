@@ -1,4 +1,12 @@
+
+html{
+    scroll-behavior: smooth;
+}
 /* Titlu pagina */
+
+
+
+
 
 .page_title{
     display: flex;
