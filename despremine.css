@@ -450,7 +450,7 @@ footer .footer_links{
     /* FAMILIA MEA */
 
     .myFamily{
-        margin:100px  50px 50px 50px;
+        margin:30px;
     }
 
     .titlu_Fam{
@@ -462,11 +462,16 @@ footer .footer_links{
     .instafooter{
         font-size:1.5rem;
     }
+    
+    .instalogo{
+        margin-left:130px;
+    }
 
      /* Navbar */
-     .dropdown_menu{
-        width:280px;
+     .dropdown_menu.open{
+        width:240px;
         right:10;
+        height: 240px;
 
     }
 

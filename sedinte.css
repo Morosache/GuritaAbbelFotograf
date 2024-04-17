@@ -119,10 +119,15 @@ h1{
         font-size:1.5rem;
     }
 
+    .instalogo{
+        margin-left:130px;
+    }
+
      /* Navbar */
-     .dropdown_menu{
-        width:280px;
+     .dropdown_menu.open{
+        width:240px;
         right:10;
+        height: 240px;
 
     }
 
